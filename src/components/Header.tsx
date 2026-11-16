@@ -1,3 +1,5 @@
+import logoImg from '../assets/Logo.png'
+
 const WHATSAPP_URL = 'https://wa.me/5511925441907'
 
 export default function Header() {
@@ -7,11 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Logo */}
-          <img
-            src="/imgs/Logo.png"
-            alt="Nova Era"
-            className="h-10 sm:h-12 w-auto object-contain"
-          />
+          <img src={logoImg} alt="Nova Era" className="h-10 sm:h-12 w-auto object-contain" />
 
           {/* Nav decorativa — desktop */}
           <nav className="hidden lg:flex items-center gap-8">

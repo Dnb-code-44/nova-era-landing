@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react'
+import card2Img from '../assets/card 2.webp'
 
 const diferenciais = [
   'Escuta ativa sem pressa para investigar a raiz do sintoma',
@@ -20,7 +21,7 @@ export default function Diferencial() {
           {/* Imagem */}
           <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:min-h-[520px] order-2 lg:order-1">
             <img
-              src="/imgs/card 2.webp"
+              src={card2Img}
               alt="Conhecendo sua história - Nova Era"
               className="w-full h-full object-cover"
             />

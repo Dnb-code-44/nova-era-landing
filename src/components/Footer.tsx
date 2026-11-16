@@ -1,4 +1,5 @@
 import { MapPin, Clock, Phone, Instagram } from 'lucide-react'
+import logoImg from '../assets/Logo.png'
 
 const WHATSAPP_URL = 'https://wa.me/5511925441907'
 const INSTAGRAM_URL = 'https://instagram.com/clinica.novaera'
@@ -15,7 +16,7 @@ export default function Footer() {
         {/* Topo do footer: logo + tagline */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 pb-10 border-b border-white/10">
           <div className="space-y-2">
-            <img src="/imgs/Logo.png" alt="Nova Era" className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
+            <img src={logoImg} alt="Nova Era" className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
             <p className="font-jakarta font-medium text-sm text-white/50 tracking-wide">
               Saúde Integrativa · Bethaville I, Barueri - SP
             </p>

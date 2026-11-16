@@ -1,3 +1,5 @@
+import identidadeImg from '../assets/Identidade Dourada Nova Era.png'
+
 const WHATSAPP_URL = 'https://wa.me/5511925441907'
 
 export default function Hero() {
@@ -54,7 +56,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative h-64 sm:h-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/imgs/Identidade Dourada Nova Era.png"
+                src={identidadeImg}
                 alt="Nova Era - Saúde Integrativa"
                 className="w-full h-full object-cover"
               />

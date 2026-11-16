@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react'
+import clinicaImg from '../assets/clinica-de-estetica-franquia.jpg'
 
 const WHATSAPP_URL = 'https://wa.me/5511925441907'
 
@@ -56,7 +57,7 @@ export default function Acolhimento() {
           {/* Imagem */}
           <div className="relative order-1 lg:order-2 h-72 sm:h-96 lg:h-auto lg:min-h-[540px]">
             <img
-              src="/imgs/clinica-de-estetica-franquia.jpg"
+              src={clinicaImg}
               alt="Ambiente Nova Era"
               className="w-full h-full object-cover"
             />
