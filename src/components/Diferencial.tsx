@@ -5,7 +5,7 @@ const diferenciais = [
   'Escuta ativa sem pressa para investigar a raiz do sintoma',
   'Visão integrada entre nutrição, hormônios, dor e estética',
   'Nada de receitas prontas ou atendimentos mecânicos',
-  'Localização prática em Bethaville I, Barueri',
+  'Localização prática no Centro de Barueri — SP',
 ]
 
 export default function Diferencial() {

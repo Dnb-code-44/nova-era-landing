@@ -40,7 +40,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-dourado/10 border border-dourado/30 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-dourado flex-shrink-0" />
               <span className="font-jakarta font-semibold text-[10px] sm:text-xs tracking-widest uppercase text-dourado">
-                Bethaville I · Barueri, SP
+                Centro · Barueri, SP
               </span>
             </div>
 

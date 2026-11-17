@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="space-y-2">
             <img src={logoImg} alt="Nova Era" className="h-12 w-auto object-contain" />
             <p className="font-jakarta font-medium text-sm text-cinza-medio tracking-wide">
-              Saúde Integrativa · Bethaville I, Barueri - SP
+              Saúde Integrativa · Rua Adelino Cardana, 293 — Barueri, SP
             </p>
           </div>
           <a
@@ -35,7 +35,7 @@ export default function Footer() {
         {/* Grid de informações */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {[
-            { Icon: MapPin,    label: 'Localização', content: <>Bethaville I<br />Barueri — SP</> },
+            { Icon: MapPin,    label: 'Localização', content: <>Rua Adelino Cardana, 293<br />Centro, Barueri — SP</> },
             { Icon: Clock,     label: 'Horários',    content: <>Segunda a Sábado<br />08h às 17h</> },
             { Icon: Phone,     label: 'WhatsApp',    href: WHATSAPP_URL,    text: '(11) 92544-1907' },
             { Icon: Instagram, label: 'Instagram',   href: INSTAGRAM_URL,   text: '@clinica.novaera' },
@@ -59,7 +59,7 @@ export default function Footer() {
         {/* Mapa com filtro dark */}
         <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80 border border-dourado/15 mb-10">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0735449486875!2d-46.876321!3d-23.502778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0252e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sBethaville%20I%2C%20Barueri%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3!2d-46.8775!3d-23.5097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01b0b0b0b0b1%3A0x1!2sRua%20Adelino%20Cardana%2C%20293%2C%20Centro%2C%20Barueri%20-%20SP%2C%2006401-147!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
             width="100%" height="100%"
             style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9)' }}
             allowFullScreen loading="lazy"
