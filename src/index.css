@@ -4,18 +4,20 @@
 
 @layer base {
   body {
-    @apply font-jakarta text-marrom bg-offwhite antialiased;
+    @apply bg-fundo text-cinza-claro font-jakarta antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-cormorant;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-balance { text-wrap: balance; }
+
+  /* Borda dourada com baixa opacidade */
+  .border-dourado-sutil { border-color: rgba(212, 175, 55, 0.25); }
+
+  /* Brilho dourado no hover */
+  .glow-dourado:hover {
+    box-shadow: 0 0 24px rgba(212, 175, 55, 0.15);
   }
 }

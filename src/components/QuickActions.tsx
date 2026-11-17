@@ -46,7 +46,7 @@ export default function QuickActions() {
           </span>
           <div className="flex-1 h-px bg-gradient-to-l from-transparent to-dourado/50" />
         </div>
-        <h2 className="font-cormorant font-semibold text-3xl sm:text-4xl lg:text-5xl text-center text-marrom">
+        <h2 className="font-cormorant font-semibold text-3xl sm:text-4xl lg:text-5xl text-center text-branco">
           Como podemos cuidar de você hoje?
         </h2>
       </div>
@@ -60,26 +60,26 @@ export default function QuickActions() {
               href={`${WHATSAPP_BASE}${encodeURIComponent(action.message)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-5 p-5 sm:p-6 bg-bege border-2 border-dourado/25 rounded-2xl hover:border-dourado hover:shadow-xl hover:bg-bege-escuro transition-all overflow-hidden"
+              className="group relative flex items-center gap-5 p-5 sm:p-6 bg-card border border-dourado/20 rounded-2xl hover:border-dourado/60 hover:bg-card-alt transition-all overflow-hidden glow-dourado"
             >
-              {/* Tag "Mais procurado" */}
+              {/* Tag */}
               {action.tag && (
-                <span className="absolute top-3 right-3 bg-dourado text-white font-jakarta font-semibold text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full">
+                <span className="absolute top-3 right-3 bg-dourado text-fundo font-jakarta font-bold text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full">
                   {action.tag}
                 </span>
               )}
 
               {/* Ícone */}
-              <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-white border-2 border-dourado/40 rounded-2xl group-hover:border-dourado group-hover:bg-dourado/10 transition-all shadow-sm">
-                <Icon className="w-6 h-6 text-dourado-escuro" strokeWidth={1.5} />
+              <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-dourado/10 border border-dourado/30 rounded-2xl group-hover:border-dourado/60 group-hover:bg-dourado/20 transition-all">
+                <Icon className="w-6 h-6 text-dourado" strokeWidth={1.5} />
               </div>
 
               {/* Texto */}
               <div className="flex-1 min-w-0">
-                <h3 className="font-cormorant font-semibold text-xl text-marrom mb-0.5">
+                <h3 className="font-cormorant font-semibold text-xl text-branco mb-0.5">
                   {action.title}
                 </h3>
-                <p className="font-jakarta font-medium text-sm text-marrom/65">
+                <p className="font-jakarta font-medium text-sm text-cinza-medio">
                   {action.description}
                 </p>
               </div>
@@ -90,8 +90,8 @@ export default function QuickActions() {
                 strokeWidth={2}
               />
 
-              {/* Linha decorativa inferior */}
-              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-dourado to-transparent group-hover:w-full transition-all duration-500" />
+              {/* Linha decorativa inferior no hover */}
+              <div className="absolute bottom-0 left-0 h-px w-0 bg-gradient-to-r from-dourado/60 to-transparent group-hover:w-full transition-all duration-500" />
             </a>
           )
         })}
