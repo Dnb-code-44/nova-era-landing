@@ -56,12 +56,12 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Mapa */}
-        <div className="rounded-2xl overflow-hidden h-64 sm:h-80 border border-dourado/15 mb-10">
+        {/* Mapa com filtro dark */}
+        <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80 border border-dourado/15 mb-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0735449486875!2d-46.876321!3d-23.502778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0252e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sBethaville%20I%2C%20Barueri%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
             width="100%" height="100%"
-            style={{ border: 0 }}
+            style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9)' }}
             allowFullScreen loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização da Clínica Nova Era"

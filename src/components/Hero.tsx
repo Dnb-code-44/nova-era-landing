@@ -25,7 +25,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="font-jakarta font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-[3.4rem] leading-[1.1] text-branco">
+            <h1 className="font-cormorant font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] text-branco">
               Saúde integrativa com cuidado e atenção que você merece
             </h1>
 
