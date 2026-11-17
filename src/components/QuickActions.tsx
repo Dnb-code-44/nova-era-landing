@@ -35,7 +35,7 @@ const actions = [
 
 export default function QuickActions() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-10">
 
       {/* Cabeçalho com ornamento */}
       <div className="flex flex-col items-center gap-3 mb-8 sm:mb-10">

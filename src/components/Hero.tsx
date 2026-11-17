@@ -4,7 +4,7 @@ const WHATSAPP_URL = 'https://wa.me/5511925441907'
 
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-4 sm:pt-14 sm:pb-8">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-3 sm:pt-14 sm:pb-8">
       <div className="relative bg-card rounded-2xl sm:rounded-3xl overflow-hidden border border-dourado/20 shadow-[0_8px_48px_rgba(0,0,0,0.6)]">
 
         {/* Cantos decorativos — só desktop */}

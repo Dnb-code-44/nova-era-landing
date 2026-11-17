@@ -27,7 +27,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto">
 
         {/* Cabeçalho */}
-        <div className="flex flex-col items-center gap-3 mb-10">
+        <div className="flex flex-col items-center gap-2 mb-6 sm:mb-8">
           <div className="flex items-center gap-3 w-full max-w-xs">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent to-dourado/50" />
             <span className="font-jakarta font-semibold text-[11px] tracking-[0.2em] uppercase text-dourado">
@@ -41,7 +41,7 @@ export default function FAQ() {
         </div>
 
         {/* Acordeão */}
-        <ul className="space-y-3">
+        <ul className="space-y-2 sm:space-y-3">
           {faqs.map((faq, index) => {
             const estaAberto = aberto === index
             return (
@@ -52,41 +52,42 @@ export default function FAQ() {
                   aria-expanded={estaAberto}
                 >
                   <div className={`
-                    relative p-5 sm:p-6 rounded-2xl border transition-all duration-300
+                    relative rounded-xl sm:rounded-2xl border transition-colors duration-200
                     ${estaAberto
-                      ? 'bg-card-alt border-dourado/50 shadow-[0_0_24px_rgba(212,175,55,0.1)]'
+                      ? 'bg-card-alt border-dourado/50'
                       : 'bg-card border-dourado/15 hover:border-dourado/35 hover:bg-card-alt'
                     }
                   `}>
 
                     {/* Linha dourada esquerda quando aberto */}
-                    <div className={`absolute left-0 top-4 bottom-4 w-px bg-dourado rounded-full transition-opacity duration-300 ${estaAberto ? 'opacity-100' : 'opacity-0'}`} />
+                    <div className={`absolute left-0 top-3 bottom-3 w-px bg-dourado rounded-full transition-opacity duration-200 ${estaAberto ? 'opacity-100' : 'opacity-0'}`} />
 
-                    <div className="flex items-start justify-between gap-4 pl-3">
-                      <h3 className={`font-cormorant font-semibold text-xl sm:text-2xl leading-snug transition-colors duration-200 ${estaAberto ? 'text-dourado-claro' : 'text-branco group-hover:text-dourado-claro'}`}>
+                    {/* Pergunta */}
+                    <div className="flex items-center justify-between gap-3 px-4 sm:px-6 py-4 pl-5 sm:pl-7">
+                      <h3 className={`font-cormorant font-semibold text-lg sm:text-2xl leading-snug transition-colors duration-200 ${estaAberto ? 'text-dourado-claro' : 'text-branco'}`}>
                         {faq.pergunta}
                       </h3>
                       <div className={`
-                        flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full border transition-all duration-300 mt-0.5
-                        ${estaAberto
-                          ? 'bg-dourado/20 border-dourado/60 rotate-0'
-                          : 'bg-dourado/10 border-dourado/25 group-hover:border-dourado/50'
-                        }
+                        flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border transition-colors duration-200
+                        ${estaAberto ? 'bg-dourado/20 border-dourado/60' : 'bg-dourado/10 border-dourado/25'}
                       `}>
                         {estaAberto
-                          ? <Minus className="w-4 h-4 text-dourado" strokeWidth={2} />
-                          : <Plus  className="w-4 h-4 text-dourado" strokeWidth={2} />
+                          ? <Minus className="w-3.5 h-3.5 text-dourado" strokeWidth={2} />
+                          : <Plus  className="w-3.5 h-3.5 text-dourado" strokeWidth={2} />
                         }
                       </div>
                     </div>
 
-                    {/* Resposta com animação */}
-                    <div className={`overflow-hidden transition-all duration-300 ${estaAberto ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                      <p className="font-jakarta font-medium text-base text-cinza-claro leading-relaxed pl-3 border-l border-dourado/20">
-                        {faq.resposta}
-                      </p>
-                    </div>
-
+                    {/* Resposta — só renderiza no DOM quando aberto para evitar espaço fantasma */}
+                    {estaAberto && (
+                      <div className="px-4 sm:px-6 pb-4 pl-5 sm:pl-7">
+                        <div className="border-l border-dourado/20 pl-3">
+                          <p className="font-jakarta font-medium text-sm sm:text-base text-cinza-claro leading-relaxed">
+                            {faq.resposta}
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </button>
               </li>

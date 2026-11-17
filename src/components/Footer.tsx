@@ -6,12 +6,12 @@ const INSTAGRAM_URL = 'https://instagram.com/clinica.novaera'
 
 export default function Footer() {
   return (
-    <footer className="bg-card mt-6">
+    <footer className="bg-card mt-2 sm:mt-6">
 
       {/* Faixa dourada de entrada */}
       <div className="h-px bg-gradient-to-r from-transparent via-dourado/60 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10 sm:pt-16 sm:pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6 sm:pt-16 sm:pb-12">
 
         {/* Topo: logo + botão */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 pb-10 border-b border-dourado/10">

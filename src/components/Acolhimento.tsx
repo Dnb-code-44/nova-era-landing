@@ -5,7 +5,7 @@ const WHATSAPP_URL = 'https://wa.me/5511925441907'
 
 export default function Acolhimento() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-10">
       <div className="relative bg-card-alt rounded-3xl overflow-hidden border border-dourado/20 shadow-[0_8px_48px_rgba(0,0,0,0.5)]">
 
         {/* Cantos decorativos */}
