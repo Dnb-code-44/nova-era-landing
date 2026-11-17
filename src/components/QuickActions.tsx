@@ -38,7 +38,7 @@ export default function QuickActions() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
 
       {/* Cabeçalho com ornamento */}
-      <div className="flex flex-col items-center gap-3 mb-10">
+      <div className="flex flex-col items-center gap-3 mb-8 sm:mb-10">
         <div className="flex items-center gap-3 w-full max-w-sm">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent to-dourado/50" />
           <span className="font-jakarta font-semibold text-[11px] tracking-[0.2em] uppercase text-dourado">
@@ -60,7 +60,7 @@ export default function QuickActions() {
               href={`${WHATSAPP_BASE}${encodeURIComponent(action.message)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-5 p-5 sm:p-6 bg-card border border-dourado/20 rounded-2xl hover:border-dourado/60 hover:bg-card-alt transition-all overflow-hidden glow-dourado"
+              className="group relative flex items-center gap-4 p-4 sm:p-6 bg-card border border-dourado/20 rounded-2xl hover:border-dourado/60 hover:bg-card-alt transition-all overflow-hidden glow-dourado"
             >
               {/* Tag */}
               {action.tag && (

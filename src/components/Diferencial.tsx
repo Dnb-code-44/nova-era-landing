@@ -36,7 +36,7 @@ export default function Diferencial() {
           </div>
 
           {/* Conteúdo */}
-          <div className="p-8 sm:p-10 lg:p-14 space-y-8 order-1 lg:order-2 flex flex-col justify-center">
+          <div className="p-6 sm:p-10 lg:p-14 space-y-6 sm:space-y-8 order-1 lg:order-2 flex flex-col justify-center">
 
             {/* Eyebrow */}
             <div className="flex items-center gap-3">

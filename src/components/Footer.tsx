@@ -25,7 +25,7 @@ export default function Footer() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-dourado/60 text-dourado rounded-full font-jakarta font-semibold text-sm hover:bg-dourado hover:text-fundo transition-all w-fit"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-dourado/60 text-dourado rounded-full font-jakarta font-semibold text-sm hover:bg-dourado hover:text-fundo transition-all w-full sm:w-fit"
           >
             Agendar pelo WhatsApp
             <span className="text-lg leading-none">›</span>

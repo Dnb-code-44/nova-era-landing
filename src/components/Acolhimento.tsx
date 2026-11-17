@@ -15,7 +15,7 @@ export default function Acolhimento() {
         <div className="grid lg:grid-cols-2 gap-0 items-stretch">
 
           {/* Conteúdo */}
-          <div className="p-8 sm:p-12 lg:p-16 space-y-7 flex flex-col justify-center order-2 lg:order-1">
+          <div className="p-6 sm:p-12 lg:p-16 space-y-6 sm:space-y-7 flex flex-col justify-center order-2 lg:order-1">
 
             {/* Eyebrow */}
             <div className="flex items-center gap-3">
@@ -55,7 +55,7 @@ export default function Acolhimento() {
           </div>
 
           {/* Imagem */}
-          <div className="relative order-1 lg:order-2 h-72 sm:h-96 lg:h-auto lg:min-h-[540px]">
+          <div className="relative order-1 lg:order-2 h-64 sm:h-96 lg:h-auto lg:min-h-[540px]">
             <img
               src={clinicaImg}
               alt="Ambiente Nova Era"
