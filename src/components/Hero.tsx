@@ -46,7 +46,7 @@ export default function Hero() {
               </a>
               <div className="hidden sm:flex items-center gap-2">
                 <span className="w-8 h-px bg-dourado/50" />
-                <span className="font-jakarta text-xs font-medium text-cinza-medio">seg – sáb · 08h</span>
+                <span className="font-jakarta text-xs font-medium text-cinza-medio">seg – sáb · 08h às 17h</span>
               </div>
             </div>
           </div>

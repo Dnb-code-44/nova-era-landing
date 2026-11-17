@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {[
             { Icon: MapPin,    label: 'Localização', content: <>Bethaville I<br />Barueri — SP</> },
-            { Icon: Clock,     label: 'Horários',    content: <>Segunda a Sábado<br />A partir das 08h</> },
+            { Icon: Clock,     label: 'Horários',    content: <>Segunda a Sábado<br />08h às 17h</> },
             { Icon: Phone,     label: 'WhatsApp',    href: WHATSAPP_URL,    text: '(11) 92544-1907' },
             { Icon: Instagram, label: 'Instagram',   href: INSTAGRAM_URL,   text: '@clinica.novaera' },
           ].map(({ Icon, label, content, href, text }) => (
